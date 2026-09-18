@@ -1,0 +1,26 @@
+{
+  "name": "tandem-iframe-sso-sandbox",
+  "version": "0.1.0",
+  "description": "Local sandbox for testing an EHR's iframe SSO integration with Tandem",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node sandbox/server.js",
+    "start:partner-example": "node partner-example/server.js",
+    "start:mock-idp": "node test/mock-idp.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "e2e": "playwright test",
+    "check": "tsc -p jsconfig.json",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^22.0.0",
+    "prettier": "^3.6.0",
+    "typescript": "^5.9.0"
+  }
+}

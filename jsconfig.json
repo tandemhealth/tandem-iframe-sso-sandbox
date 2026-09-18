@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["es2023", "dom", "dom.iterable"],
+    "types": ["node"],
+    "checkJs": true,
+    "strict": true,
+    "noEmit": true,
+    "noUncheckedIndexedAccess": false,
+    "skipLibCheck": true
+  },
+  "include": ["sandbox/**/*.js", "partner-example/**/*.js", "test/**/*.js", "e2e/**/*.js", "playwright.config.js"],
+  "exclude": ["node_modules", "sandbox/static", "partner-example/static"]
+}
